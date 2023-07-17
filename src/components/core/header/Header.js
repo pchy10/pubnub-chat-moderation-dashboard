@@ -78,10 +78,9 @@ export default function Header() {
             edge="start"
             onClick={() => history.push("/dashboard")}
             className={classes.menuButton}
-            color="inherit"
             aria-label="open drawer"
           >
-            <img src={process.env.PUBLIC_URL + "/images/Pubnub logo.svg"} width={90} alt="" />
+            <div>Civic Champs</div>
           </IconButton>
           <div className={classes.verticalLine} />
           {showBreadcrumbs()}

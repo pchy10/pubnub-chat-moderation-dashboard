@@ -40,7 +40,7 @@ function Sidebar({ content }) {
           button
         >
           <ListItemIcon className={classes.listItemRoot}>
-            <HomeOutlined className={classes.overviewIcon} />
+            <HomeOutlined className={classes.icon} />
           </ListItemIcon>
           <ListItemText>
             <Typography variant="body2">Overview</Typography>
@@ -49,7 +49,7 @@ function Sidebar({ content }) {
 
         <ListItem id="settingsItem" button onClick={handleClick}>
           <ListItemIcon className={classes.listItemRoot}>
-            <SettingsOutlined className={classes.settingsIcon} />
+            <SettingsOutlined className={classes.icon} />
           </ListItemIcon>
           <ListItemText>
             <Typography variant="body2">Settings</Typography>
@@ -65,7 +65,7 @@ function Sidebar({ content }) {
               selected={history.location.pathname === "/text-moderation"}
             >
               <ListItemIcon className={classes.settingsItemRoot}>
-                <DescriptionOutlined className={classes.textModerationIcon} />
+                <DescriptionOutlined className={classes.icon} />
               </ListItemIcon>
               <ListItemText>
                 <Typography variant="body2">Text Moderation</Typography>
@@ -74,7 +74,7 @@ function Sidebar({ content }) {
 
             <ListItem button onClick={() => history.push("/image-moderation")}>
               <ListItemIcon className={classes.settingsItemRoot}>
-                <ChatBubbleOutline className={classes.chatIcon} />
+                <ChatBubbleOutline className={classes.icon} />
               </ListItemIcon>
               <ListItemText>
                 <Typography variant="body2">Image Moderation</Typography>
@@ -90,7 +90,7 @@ function Sidebar({ content }) {
           selected={history.location.pathname === "/users"}
         >
           <ListItemIcon className={classes.listItemRoot}>
-            <PersonOutlined className={classes.userIcon} />
+            <PersonOutlined className={classes.icon} />
           </ListItemIcon>
           <ListItemText>
             <Typography variant="body2">Users</Typography>
@@ -104,7 +104,7 @@ function Sidebar({ content }) {
           selected={history.location.pathname === "/channels"}
         >
           <ListItemIcon className={classes.listItemRoot}>
-            <MailOutline className={classes.channelIcon} />
+            <MailOutline className={classes.icon} />
           </ListItemIcon>
           <ListItemText>
             <Typography variant="body2">Channels</Typography>

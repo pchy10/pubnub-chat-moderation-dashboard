@@ -4,27 +4,18 @@ const drawerWidth = 220;
 export const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    padding: "10px",
+    minHeight: "calc(100vh - 82px)",
   },
   textModerationIcon: {
     color: "#00e676",
   },
-  overviewIcon: {
-    color: "#673ab7",
-  },
-  channelIcon: {
-    color: "#e91e63",
-  },
-  settingsIcon: {
-    color: "#f44336",
-  },
-  chatIcon: {
-    color: "#ffc400",
-  },
-  userIcon: {
-    color: "#00e5ff",
+  icon: {
+    color: "#fff",
   },
   drawer: {
+    backgroundColor: "#4985DF",
+    color: "#fff",
+
     [theme.breakpoints.up("xs")]: {
       width: drawerWidth,
       flexShrink: 0,
